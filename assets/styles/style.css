@@ -31,6 +31,7 @@ header {
     position: sticky;
     top: 0;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    z-index: 999;
 }
 
 /* #1 LOGO */
@@ -74,9 +75,8 @@ main {
 /* CONTENT INTRODUCTION START */
 .introduction {
     width: 60vw;
-    height: 600px;
-    /* background-color: red; */
-    padding: 10px 0;
+    min-height: 80vh;
+    padding: 40px 10px 10px 10px;
     display: flex;
     flex-direction: column;
 }
@@ -105,22 +105,125 @@ main {
 
 /* CONTENT INTRODUCTION END*/
 
+/* CONTENT SKILLS START*/
+.skills {
+    margin-top: 60px;
+    width: 60vw;
+    background-color: var(--secondary-color);
+    border: 1px solid #707070;
+    border-radius: 5px;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, .16);
+    padding: 10px 10px;
+}
+
+.skills h1 {
+    font-size: 2rem;
+}
+
+.skills ul {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills ul li {
+    list-style-type: none;
+}
+
+.skills ul li i {
+    font-size: 7rem;
+}
+
+/* CONTENT SKILLS END*/
+
 /* ASIDE START*/
 aside {
     width: 30vw;
     height: 1000px;
-    background-color: red;
 }
 
-/* ARTICLE BIO START*/
+/* HEADER BIO START*/
 
-aside article.bio {
+aside header.bio {
     width: 100%;
-    height: 600px;
-    background-color: orange;
+    min-height: 80vh;
+    max-height: auto;
+    background-color: var(--secondary-color);
+    border: 1px solid #707070;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, .16);
+    border-radius: 5px;
+    position: static;
+    padding: 10px 30px;
 }
 
-/* ARTICLE BIO END*/
+aside header.bio figure img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+aside header.bio figure figcaption {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    word-spacing: 5px;
+    margin: 5px 0;
+}
+
+.detail {
+    margin-top: 10px;
+}
+
+.row {
+    margin: 5px 0;
+}
+
+.row p {
+    font-weight: bold;
+}
+
+.row p span {
+    font-weight: normal;
+    opacity: .5;
+}
+
+/* HEADER BIO END*/
+/* ARTICLE EDUCATION START */
+.education {
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.education section {
+    display: flex;
+    flex-direction: column;
+}
+
+.education h1 {
+    font-size: 2rem;
+}
+
+.education section figure {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.education section figure img {
+    height: 3rem;
+}
+
+.education section .line {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    align-self: center;
+}
+
+/* ARTICLE EDUCATION END */
 /* ASIDE END*/
 /* MAIN END */
 
