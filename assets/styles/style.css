@@ -292,6 +292,18 @@ aside .bio figure figcaption {
 
 .certificate-detail {
     width: 40vw;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-detail * {
+    margin: 3px;
+}
+
+.data-from {
+    font-weight: normal;
+    opacity: .5;
 }
 
 .certificate-figure img {
@@ -478,6 +490,10 @@ footer .disclaimer {
 
     .social-media ul {
         width: 50vw;
+    }
+
+    .certificate-detail {
+        min-height: 300px;
     }
 
     /* HEADER END */
