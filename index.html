@@ -8,38 +8,127 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>Rama - Portofolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
 
     <!-- HEADER START -->
     <header>
-        <div class="logo">
-            PORTOFOLIO
+        <div>
+            <div class="logo">
+                PORTOFOLIO
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">BIO</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#educations">EDUCATIONS</a></li>
+                    <li><a href="#certificates">CERTIFICATES</a></li>
+                    <li><a href="#social-media">SOCIAL MEDIA</a></li>
+                </ul>
+            </nav>
+            <button class="menu"><i class="bi bi-list"></i></button>
         </div>
-        <nav>
+        <nav class="drop-menu">
             <ul>
                 <li><a href="#">BIO</a></li>
-                <li><a href="#">SKILL</a></li>
-                <li><a href="#">EDUCATION</a></li>
-                <li><a href="#">CERTIFICATE</a></li>
-                <li><a href="#">SOCIAL MEDIA</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#educations">EDUCATIONS</a></li>
+                <li><a href="#certificates">CERTIFICATES</a></li>
+                <li><a href="#social-media">SOCIAL MEDIA</a></li>
             </ul>
         </nav>
+
     </header>
     <!-- HEADER END -->
 
     <!-- MAIN START -->
     <main>
-        <div class="content">
-            <article class="introduction">
-                <p class="hello">Hello there! my name is Rama 👋</p>
-                <h1>Front End Developer</h1>
-                <p class="detail">A student taking a bachelor's degree in computer science at Lambung Mangkurat
-                    University. Have interest in technology and aspire to become a great front end developer</p>
-                <p class="scroll">Scroll to get more about me 👇</p>
-            </article>
-            <article class="skills">
+        <div class="primary-content">
+            <div class="content">
+                <article class="introduction">
+                    <p class="hello">Hello there! my name is Rama 👋</p>
+                    <h1>Front End Developer</h1>
+                    <p class="detail">A student taking a bachelor's degree in computer science at Lambung Mangkurat
+                        University. Have interest in technology and aspire to become a great front end developer</p>
+                    <p class="scroll">Scroll to get more about me 👇</p>
+                </article>
+                <article class="skills dekstop-mode" id="skills">
+                    <h1>Skills</h1>
+                    <p>I'm studying and interested in:</p>
+                    <ul>
+                        <li>
+                            <i class="devicon-php-plain colored"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-javascript-plain colored"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-java-plain colored"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-python-plain colored"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-css3-plain colored"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-html5-plain colored"></i>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+            <aside>
+                <div class="bio">
+                    <figure>
+                        <img src="assets/images/profile-picture.png" alt="rama-noor-rizki-profile">
+                        <figcaption>Rama Noor Rizki</figcaption>
+                    </figure>
+                    <div class="detail">
+                        <div class="row">
+                            <p>Address: <span>Banjarbaru, South Kalimantan</span></p>
+                        </div>
+                        <div class="row">
+                            <p>Date of Birth: <span>May 4th, 2002</span></p>
+                        </div>
+                        <div class="row">
+                            <p>Place of Birth: <span>Kotabaru, South Kalimantan</span></p>
+                        </div>
+                        <div class="row">
+                            <p>Interest & Hobbies: <span>Watching movies, playing games, drawing</span></p>
+                        </div>
+                    </div>
+                </div>
+                <article class="education" id="educations">
+                    <h1>Education</h1>
+                    <section>
+                        <figure>
+                            <figcaption>
+                                <h2>Lambung Mangkurat University</h2>
+                                <p>Computer Science - 2020</p>
+                            </figcaption>
+                            <img src="assets/images/ulm-logo.png" alt="">
+                        </figure>
+                        <div class="line"></div>
+                    </section>
+                    <section>
+                        <figure>
+                            <figcaption>
+                                <h2>SMAN 1 Kotabaru</h2>
+                                <p>Science - 2017</p>
+                            </figcaption>
+                            <img src="assets/images/smasa-logo.png" alt="">
+                        </figure>
+                        <div class="line"></div>
+                    </section>
+                </article>
+            </aside>
+        </div>
+        <div class="secondary-content">
+            <article class="skills mobile-mode" id="skills">
                 <h1>Skills</h1>
                 <p>I'm studying and interested in:</p>
                 <ul>
@@ -63,57 +152,62 @@
                     </li>
                 </ul>
             </article>
-        </div>
-        <aside>
-            <header class="bio">
-                <figure>
-                    <img src="assets/images/profile-picture.png" alt="rama-noor-rizki-profile">
-                    <figcaption>Rama Noor Rizki</figcaption>
-                </figure>
-                <div class="detail">
-                    <div class="row">
-                        <p>Address: <span>Banjarbaru, South Kalimantan</span></p>
+            <article class="certificates">
+                <h1 id="certificates">Certificates</h1>
+                <div class="slider">
+                    <button class="button-previous">
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios
+                        </span>
+                    </button>
+                    <div class="container">
+                        <section class="certificate-detail">
+                            <h2>Belajar Dasar Pemgroraman Web - Dicoding</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dicta maiores voluptatum
+                                sit
+                                rerum, dolorem cupiditate assumenda at ut sequi est atque qui reprehenderit beatae! At
+                                nulla
+                                animi alias delectus quae distinctio corrupti impedit! Commodi quibusdam aspernatur
+                                quia
+                                nam. Hic enim iusto quisquam eligendi non provident similique ad fugiat repudiandae.
+                            </p>
+                        </section>
+                        <section class="certificate-figure">
+
+                            <img src="assets/images/dicoding.png" alt="">
+
+                        </section>
                     </div>
-                    <div class="row">
-                        <p>Date of Birth: <span>May 4th, 2002</span></p>
-                    </div>
-                    <div class="row">
-                        <p>Place of Birth: <span>Kotabaru, South Kalimantan</span></p>
-                    </div>
-                    <div class="row">
-                        <p>Interest & Hobbies: <span>Watching movies, playing games, drawing</span></p>
-                    </div>
+                    <button class="button-next">
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                        </span>
+                    </button>
                 </div>
-            </header>
-            <article class="education">
-                <h1>Education</h1>
-                <section>
-                    <figure>
-                        <figcaption>
-                            <h2>Lambung Mangkurat University</h2>
-                            <p>Computer Science - 2020</p>
-                        </figcaption>
-                        <img src="assets/images/ulm-logo.png" alt="">
-                    </figure>
-                    <div class="line"></div>
-                </section>
-                <section>
-                    <figure>
-                        <figcaption>
-                            <h2>SMAN 1 Kotabaru</h2>
-                            <p>Science - 2017</p>
-                        </figcaption>
-                        <img src="assets/images/smasa-logo.png" alt="">
-                    </figure>
-                    <div class="line"></div>
-                </section>
             </article>
-        </aside>
+        </div>
     </main>
     <!-- MAIN END -->
 
     <!-- FOOTER START -->
-    <footer></footer>
+    <footer>
+        <div class="social-media" id="social-media">
+            <h1>Rama Noor Rizki</h1>
+            <p>Please Visit Me on</p>
+            <ul>
+                <li><a href="https://web.facebook.com/rama.noorrizki/" target="_blank"><i
+                            class="bi bi-facebook"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/ramaaanr/" target="_blank"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li><a href="https://wa.me/6287846948132" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                <li><a href="mailto:ramanoorrizki@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rama-noor-rizki-404531232" target="_blank"><i
+                            class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://github.com/ramaaanr" target="_blank"><i class="bi bi-github"></i></a></li>
+        </div>
+        <div class="disclaimer">Copyright Ⓒ2022 Rama Noor Rizki</div>
+    </footer>
     <!-- FOOTER END -->
 
 </body>
