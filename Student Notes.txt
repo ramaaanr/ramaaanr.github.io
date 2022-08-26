@@ -1,0 +1,4 @@
+Feature yang terdapat dalam aplikasi ini yaitu:
+1. Slide, diakses melalui dua tombol kira dan kanan yang dapat membuat sertifikat berganti-ganti
+2. Hamburger Menu, diakses melalui tombol list/menu yang akan muncul ketika layar di ukuran dibawah 768px.
+   Jika tombol ditekan maka navigasi akan muncul.
